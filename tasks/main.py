@@ -1,12 +1,14 @@
 import requests
 import pandas as pd
+from reusable_code import log_to_file
 
 lista_localidade = [] 
 lista_status = []
 lista_mensagem = []
 
 # Leitura dos dados
-dados = pd.read_excel(r"C:\Users\elton.duarte\Downloads\python-rpa\viacep\ceps-BKP.xlsx")
+dados = pd.read_excel('files/ceps-BKP.xlsx')
+log_to_file.info('Leitura da planilha realizada com sucesso', 'logs/teste.txt')
 
 for i, row in dados.iterrows():
 

@@ -1,0 +1,1 @@
+2024-04-01 15:55:15.455906 | INFO | Leitura da planilha realizada com sucesso
